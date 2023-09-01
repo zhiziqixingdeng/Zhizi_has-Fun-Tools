@@ -6,51 +6,53 @@ using namespace std;
 int n,a;
 string name,str;
 int main(){
-	cout<<"»¶Ó­À´µ½ACÂë£¨»¬»ü)¼ÓÃÜ½âÃÜ"<<endl;
+	cout<<"æ¬¢è¿Žæ¥åˆ°ACç ï¼ˆæ»‘ç¨½)åŠ å¯†è§£å¯†"<<endl;
 	sleep(1);
 	system("cls");
-	cout<<"ÇëÊäÈëÄãµÄÃû×Ö:";
+	cout<<"è¯·è¾“å…¥ä½ çš„åå­—:";
 	cin>>name;
-	cout<<"hi,"<<name<<"£¡"<<endl;
+	cout<<"hi,"<<name<<"ï¼"<<endl;
 	sleep(1);
 	system("cls");
 	while(1==1){
-		cout<<"ÄãÒª¸ÉÊ²Ã´"<<endl;
-		cout<<"1.¼ÓÃÜ"<<endl;
-		cout<<"2.½âÃÜ"<<endl;
-		cout<<"3.ÍË³ö"<<endl;
+		cout<<"ä½ è¦å¹²ä»€ä¹ˆ"<<endl;
+		cout<<"1.åŠ å¯†"<<endl;
+		cout<<"2.è§£å¯†"<<endl;
+		cout<<"3.é€€å‡º"<<endl;
 		cout<<"*****************"<<endl;
 		cin>>n;
 		if(n==1){
-			cout<<"ÇëÊäÈëÃÜÔ¿Êý×Ö(1~9):";
+			cout<<"è¯·è¾“å…¥å¯†é’¥æ•°å­—(1~9):";
 			cin>>a;
-			cout<<"ÇëÊäÈëÐèÒª¼ÓÃÜµÄ×Ö·û´®£¨²»Òª¿Õ¸ñ£©:";
+			cout<<"è¯·è¾“å…¥éœ€è¦åŠ å¯†çš„å­—ç¬¦ä¸²ï¼ˆä¸è¦ç©ºæ ¼ï¼‰:";
 			cin.ignore();
 			getline(cin,str);
 			for(int i=1;i<=str.length();i++){
 				str[i]=str[i]+a;
 			}
-			cout<<"¼ÓÃÜºóµÄ:";
+			cout<<"åŠ å¯†åŽçš„:";
 			cout<<str<<endl;
 			system("pause");
 		}
 		else if(n==2){
-			cout<<"ÇëÊäÈëÃÜÔ¿Êý×Ö(1~9£©:";
+			cout<<"è¯·è¾“å…¥å¯†é’¥æ•°å­—(1~9ï¼‰:";
 			cin>>a;
-			cout<<"ÇëÊäÈëÐèÒª½âÃÜµÄ×Ö·û´®:";
+			cout<<"è¯·è¾“å…¥éœ€è¦è§£å¯†çš„å­—ç¬¦ä¸²:";
 			cin.ignore();
 			getline(cin,str);
 			for(int i=1;i<=str.length();i++){
 				str[i]-=a;
 			}
-			cout<<"½âÃÜºóµÄ:"<<str<<endl;
+			cout<<"è§£å¯†åŽçš„:"<<str<<endl;
 			system("pause");
 		}
 		else if(n==3){
-			cout<<"¸ÐÐ»Ê¹ÓÃ"<<endl;
+			cout<<"æ„Ÿè°¢ä½¿ç”¨"<<endl;
+			sleep(1);
+			return 0;
 		}
 		else{
-			cout<<"´íÎó"<<endl;
+			cout<<"é”™è¯¯"<<endl;
 		}
 	}
 } 
