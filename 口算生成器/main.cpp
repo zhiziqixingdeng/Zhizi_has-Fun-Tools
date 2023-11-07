@@ -10,17 +10,17 @@ struct flag{
 int cnt,ans;
 int a[4],b[4],c,d;
 int main(){
-	cout<<"ÇëÊäÈëµÀÊı:";
+ cout<<"è¯·è¾“å…¥é“æ•°(æœ€é«˜20é“):";
 	cin>>s[0].flag1;
-	cout<<"ÓĞÃ»ÓĞ½øÎ»/ÍËÎ» 1.ÓĞ 2.Ã»ÓĞ"<<endl;
+	cout<<"æœ‰æ²¡æœ‰è¿›ä½/é€€ä½ 1.æœ‰ 2.æ²¡æœ‰"<<endl;
 	cin>>s[0].flag2;
-	cout<<"ÇëÊäÈëÃ¿µÀĞèÒª¼¸·ÖÖÓ:";
+	cout<<"è¯·è¾“å…¥æ¯é“éœ€è¦å‡ åˆ†é’Ÿ:";
 	cin>>s[0].flag3;
-	ans=s[0].flag3*s[0].flag1;//¼ÆËãĞèÒªµÄÊ±¼ä
+	ans=s[0].flag3*s[0].flag1;//è®¡ç®—éœ€è¦çš„æ—¶é—´
 	srand(time(NULL));
-	freopen("Á·Ï°Ìâ.txt","w",stdout);
-	cout<<"         Á·Ï°Ìâ          "<<endl;
-	cout<<"ĞÕÃû:______  ½¨ÒéÓÃÊ±:"<<ans<<" Êµ¼ÊÓÃÊ±:_______"<<endl;
+	freopen("ç»ƒä¹ é¢˜.txt","w",stdout);
+	cout<<"         ç»ƒä¹ é¢˜          "<<endl;
+	cout<<"å§“å:______  å»ºè®®ç”¨æ—¶:"<<ans<<" å®é™…ç”¨æ—¶:_______"<<endl;
 	for(int i=1;i<=s[0].flag1;i++){
 		c=rand()%2+1;
 		if(c==1){
@@ -28,7 +28,7 @@ int main(){
 			a[2]=rand()%10;
 			a[3]=rand()%10;
 			if(s[0].flag2==1){
-				d=rand()%3;
+				d=rand()%1+1;
 				while(a[d]+b[d]>=10){
 					b[1]=rand()%10;
 					b[2]=rand()%10;
@@ -58,7 +58,7 @@ int main(){
 				}
 			}
 			else{
-			d=rand()%3;
+			d=rand()%1+1;
 			while(a[d]+b[d]<10){
 			  b[1]=rand()%10;
 			  b[2]=rand()%10;
@@ -93,7 +93,7 @@ int main(){
 			a[2]=rand()%10;
 			a[3]=rand()%10;
 			if(s[0].flag2==1){
-				d=rand()%3;
+				d=rand()%1+1;
 				while(a[d]-b[d]<=0){
 					b[1]=rand()%10;
 					b[2]=rand()%10;
@@ -123,7 +123,7 @@ int main(){
 				}
 			}
 			else{
-			d=rand()%3;
+			d=rand()%1+1;
 			while(a[d]-b[d]>0){
 			  b[1]=rand()%10;
 			  b[2]=rand()%10;
@@ -157,6 +157,9 @@ int main(){
 		if(cnt==2){
 			cout<<endl;
 			cnt=0;
+		}
+		else{
+			cout<<"   ";
 		}
 	}
 }
